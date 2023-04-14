@@ -20,7 +20,10 @@
 # print(Sum)
 
 # Решение №4 через Рондом
+import time
 from random import random
+
+start_timer = time.time()
 number = int(random()*9999999)
 print (number)
 string = str(number)
@@ -28,6 +31,13 @@ Sum = 0
 for i in range(len(string)):
     Sum+=int(string[i])
 print(Sum)
+
+timer_end = time.time()
+timer_sec = timer_end - start_timer
+timer_msec = timer_sec * 1000
+print(timer_sec)
+print(timer_msec)
+
 
 
 
