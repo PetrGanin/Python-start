@@ -21,7 +21,7 @@ Slovar = {
 word = input("Введите слово: ").upper()
 summ = 0
 for i in word:
-    for m, n in Slovar.items():
-        if i in n:
-            summ += m
+    for key, value in Slovar.items():
+        if i in value:
+            summ += key
 print(f"Сумма слова: {summ}")
